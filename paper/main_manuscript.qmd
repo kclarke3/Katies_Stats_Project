@@ -1,7 +1,7 @@
 ---
-title: "Paper Manuscript"
+title: "Spatial Changes in Drug Overdose Deaths Over Tim"
 shorttitle: "Paper"
-abstract: An Abstract
+abstract: "Drug epidemics have consistiently reflected the broader social context they take place in. Rates of use, overdoses, and arrests, can help indicate the significance of policies, culture shifts, and various other movements. In light of the National Adderall Shortage, Expansion of Fentanyl Networks, as well as the pandemic, This paper examines the rates of drug overdose at a state level over the past five years. Keywords:Overdose, Regional Death Rates, Drug Related Deaths"
 keywords: [keyword1, keyword2]
 thanks: Thanks to everyone for checking this out.
 reference-section-title: References
@@ -32,7 +32,7 @@ source(here("utils","functions.R"))
 
 # Introduction
 
-This quarto doc is for writing the manuscript. This is a test citation [@alba1990].
+This project aims to answer the following: How do rates of Drug Induced Deaths DID overtime vary by state? Drug epidemics have consistiently reflected the broader social context they take place in. Rates of use, overdoses, and arrests, can help indicate the significance of policies, culture shifts, and various other movements. In light of the National Adderall Shortage, Expansion of Fentanyl Networks, as well as the pandemic, This paper examines the rates of drug overdose at a state level over the past five years. Utilizing quantitative methods, this research aims to contribute to deviance and crime studys that rely upon geospatial analyses to substantiate community and public health issues, in this case, drug epidemics
 
 # Background
 
