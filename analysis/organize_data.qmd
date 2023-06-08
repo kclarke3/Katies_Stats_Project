@@ -10,4 +10,29 @@ source(here("utils","check_packages.R"))
 source(here("utils","functions.R"))
 ```
 
-This quarto doc is used to organize the data.
+```{r}
+#| label: read-overdose-data
+
+deaths2016 <- read_csv(here("data","data_raw","R13387112_SL050.csv"),
+                       skip=1) |> mutate(year=2016)
+deaths2017 <- read_csv(here("data","data_raw","R13387105_SL050.csv"),
+                       skip=1) |> mutate(year=2017)
+deaths2018 <- read_csv(here("data","data_raw","R13387102_SL050.csv"),
+                       skip=1) |> mutate(year=2018)
+deaths2019 <- read_csv(here("data","data_raw","R13386790_SL050.csv"),
+                       skip=1) |> mutate(year=2019)
+deaths2020 <- read_csv(here("data","data_raw","R13387110_SL050.csv"),
+                       skip=1) |> mutate(year=2020)
+
+deaths <- bind_rows(deaths2016, deaths2018, deaths2019, deaths2020) |>
+  select("Geo_NAME","Geo_FIPS", "year", "SE_T008_003","SE_NV006_003") |>
+  rename(county_name=Geo_NAME, fips=Geo_FIPS, 
+         overdose_deaths=SE_T008_003, overdose_death_rate=SE_NV006_003) |>
+  mutate(pop_exposure=100000*overdose_deaths/overdose_death_rate)
+```
+
+```{r}
+model <- glm(overdose_deaths~year, data=deaths, 
+             family=poisson, offset=log(pop_exposure))
+```
+
