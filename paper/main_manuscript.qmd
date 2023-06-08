@@ -1,5 +1,5 @@
 ---
-title: "Spatial Changes in Drug Overdose Deaths Over Tim"
+title: "Spatial Changes in Drug Overdose Deaths Over Time"
 shorttitle: "Paper"
 abstract: "Drug epidemics have consistiently reflected the broader social context they take place in. Rates of use, overdoses, and arrests, can help indicate the significance of policies, culture shifts, and various other movements. In light of the National Adderall Shortage, Expansion of Fentanyl Networks, as well as the pandemic, This paper examines the rates of drug overdose at a state level over the past five years. Keywords:Overdose, Regional Death Rates, Drug Related Deaths"
 keywords: [keyword1, keyword2]

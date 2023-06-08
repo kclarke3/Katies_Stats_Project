@@ -1,1 +1,5 @@
-This directory contains all raw data that is external to the project. This README should be updated to describe data sources.
+# R13387112 is 2016
+# R13387105 is 2017
+# R13387102 is 2018
+# R13386790 is 2019
+# R13387110 is 2020
